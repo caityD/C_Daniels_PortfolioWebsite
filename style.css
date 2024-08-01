@@ -5,6 +5,9 @@
     box-sizing: boarder-box;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body
 {
     background: #A78D84;
@@ -70,7 +73,7 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 .header-txt h1{
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 10px;
 }
 
@@ -171,10 +174,15 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 40px;
 }
+.btn.btn2{
+   display: block;
+   background: #c2afa2 ;
+   color: #6d412a; 
+}
 
 /*-------GET IN TOUCH--------*/
 #getInTouch{
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #6d412a;
 }
 .smallerImage{
@@ -212,4 +220,22 @@ nav ul li a:hover::after{
 }
 .contactInfo{
     font-weight: bold;
+}
+
+/*****css for small screen*****/
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url("images/HomeNew.png (1).png");       
+    }
+    .header-txt{ 
+        margin-top: 100%;       
+        font-size: 16px;
+    }
+    .header-txt h1{
+        font-size: 30px;
+        
+    }
+    
+    
+
 }
